@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html ng-app="blocJams">
+<!-- ngApp is a built-in Angular directive. This particular directive tells
+Angular where to bootstrap the defined application. For Bloc Jams, it's <html>,
+or the entire document. The ng-app activates the blocJams module for this part
+of the page.
+
+ng has no particular significance. The Angular FAQ says that "ng" sounds like
+"Angular." -->
+    <head lang="en">
         <title>Bloc Jams</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
@@ -21,7 +28,7 @@
                 <a href="collection.html" class="navbar-link">Collection</a>
             </div>
         </nav>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="scripts/app.js"></script>
     </body>
 </html>
