@@ -1,9 +1,9 @@
 (function() {
-    function AlbumCtrl(Fixtures) {
-        this.albumData = Fixtures.getAlbum(albumPicasso);
+    function AlbumCtrl(Fixtures, SongPlayer) {
+        this.SongPlayer = SongPlayer;
     };
 
     angular
         .module('blocJams')
-        .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
+        .controller('AlbumCtrl', ['Fixtures', 'SongPlayer', AlbumCtrl]);
 })();
