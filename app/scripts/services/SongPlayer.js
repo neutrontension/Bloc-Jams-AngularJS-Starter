@@ -63,6 +63,10 @@
         // @type {Number}
         SongPlayer.currentTime = null;
 
+        // @desc current song volume from 0 to 100
+        // @type {Number}
+        SongPlayer.volume = null;
+
          // @function play
          // @desc plays a song or replaces song that is currently playing with
          // newly selected songs
@@ -142,6 +146,12 @@
                currentBuzzObject.setTime(time);
            }
        };
+
+       SongPlayer.setVolume = function(volume) {
+           if (currentBuzzObject) {
+               currentBuzzObject.setVolume(volume);
+           }
+       }
 
          return SongPlayer;
     }
