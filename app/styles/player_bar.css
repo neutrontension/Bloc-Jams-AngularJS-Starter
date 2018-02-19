@@ -108,7 +108,7 @@
 }
 
 .seek-bar .fill {
-    background: white;
+    background-color: white;
     width: 36%;
     height: 0.25rem;
     border-radius: 2px;
@@ -118,17 +118,19 @@
     position: absolute;
     height: 0.5rem;
     width: 0.5rem;
-    background: white;
+    background-color: white;
     left: 36%;
-    margin-left: -0.25rem;
     top: 50%;
+    margin-left: -0.25rem;
     margin-top: -0.25rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: width 100ms ease-in-out,
-                height 100ms ease-in-out,
-                margin-top 100ms ease-in-out,
-                margin-left 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+        -moz-transition: all 100ms ease-in-out;
+            transition: width 100ms ease-in-out,
+                        height 100ms ease-in-out,
+                        margin-top 100ms ease-in-out,
+                        margin-left 100ms ease-in-out;
 }
 
 .seek-bar:hover .thumb {
@@ -159,10 +161,10 @@
 
 /* === MOBILE === */
 
-@media (max-width: 40rem) {
+@media (max-width: 640px) {
     .player-bar {
         padding: 1rem;
-        background: rgba(0,0,0,0.6);
+        background-color: rgba(255,255,255,0.3);
     }
 
     .player-bar .main-controls,
@@ -172,27 +174,24 @@
         margin: 0 auto;
         padding: 0;
         width: 100%;
-        text-align: center;   
-    }
-    
-    .player-bar .main-controls {
-        min-height: 3.5rem;
-    }
-    
-    .player-bar .currently-playing {
-        min-height: 2.5rem;
+        text-align: center;
     }
 
+    .player-bar .main-controls,
     .player-bar .volume {
         min-height: 3.5rem;
     }
 
-    .artist-name, 
-    .song-name {
+    .player-bar .currently-playing {
+        min-height: 2.5rem;
+    }
+
+    .player-bar .artist-name,
+    .player-bar .song-name {
         display: none;
     }
-    
-    .artist-song-mobile {
+
+    .player-bar .currently-playing .artist-song-mobile {
         display: block;
     }
 }

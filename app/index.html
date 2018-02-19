@@ -19,9 +19,9 @@ ng has no particular significance. The Angular FAQ says that "ng" sounds like
         <link rel="stylesheet" type="text/css" href="styles/album.css">
         <link rel="stylesheet" type="text/css" href="styles/player_bar.css">
     </head>
-    <body class="landing">
+    <body>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a ui-sref="landing" class="logo">
                 <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
             </a>
             <div class="links-container">
@@ -34,9 +34,9 @@ external module known as UI-Router) tells Angular where to place the templates
 when they're requested. -->
         <ui-view></ui-view>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
         <script src="scripts/app.js"></script>
         <script src="/scripts/services/Fixtures.js"></script>
@@ -46,5 +46,6 @@ when they're requested. -->
         <script src="/scripts/controllers/AlbumCtrl.js"></script>
         <script src="/scripts/controllers/PlayerBarCtrl.js"></script>
         <script src="/scripts/directives/seekBar.js"></script>
+        <script src="/scripts/filters/timecode.js"></script>
     </body>
 </html>
