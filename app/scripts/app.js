@@ -28,7 +28,7 @@
             /* $stateProvider.state() returns $stateProvider, so we
             are able to call state() again without having to reference
             the $stateProvider variable, with a semicolon at the end of
-            each call. This is called chaining. We've put the state() 
+            each call. This is called chaining. We've put the state()
             calls on their own line. Because we removed the semicolon
             from the first state() call, JavaScript will look to the
             next line for a continuation. When chaining method calls,
