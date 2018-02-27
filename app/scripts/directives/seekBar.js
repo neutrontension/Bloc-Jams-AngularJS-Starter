@@ -66,10 +66,11 @@
                       notifyOnChange(scope.value);
                     });
                   });
+
                   $document.bind('mouseup.thumb', function() {
-                  $document.unbind('mousemove.thumb');
-                  $document.unbind('mouseup.thumb');
-                    });
+                    $document.unbind('mousemove.thumb');
+                    $document.unbind('mouseup.thumb');
+                  });
                 };
 
                 var notifyOnChange = function(newValue) {
@@ -79,7 +80,7 @@
                 };
             }
         };
-    }
+    };
 
     angular
         .module('blocJams')

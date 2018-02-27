@@ -6,19 +6,18 @@
 
 html {
     height: 100%;
-    font-size: 100%;
 }
 
 body {
+    font-family: 'Open Sans';
+    color: white;
+    min-height: 100%;
     background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    font-family: 'Open Sans';
-    color: white;
-    min-height: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
  }
 
 .navbar {
@@ -62,6 +61,10 @@ body {
 
 .links-container .navbar-link:hover {
     color: rgb(233,50,117);
+}
+
+.links-container .navbar-link:active {
+    background-color: white;
 }
 
 .container {

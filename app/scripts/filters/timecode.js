@@ -26,7 +26,7 @@
 
             return output;
         };
-    }
+    };
 
     angular
         .module('blocJams')

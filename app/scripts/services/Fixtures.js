@@ -52,5 +52,18 @@
 
     angular
         .module('blocJams')
+        /* .factory() designates the use of the Factory recipe. For the
+        Service recipe, we'd use .service(). The factory will return the
+        variable set to an empty object within the Fixtures function and
+        make it available to other parts of the app. A factory is a
+        function which returns any object. As a breakdown:
+
+        A service: holds a reference to any object.
+
+        A factory: is a function which returns any object.
+
+        A provider: is a function which returns any function.
+
+         */
         .factory('Fixtures', Fixtures);
 })();
