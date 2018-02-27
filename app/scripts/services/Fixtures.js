@@ -1,9 +1,9 @@
 (function() {
     function Fixtures() {
         var Fixtures = {};
-        /* declared a variable set to an empty object and the factory will return
+        /* Declared a variable set to an empty object. The factory will return
         this object and make its properties and methods available to other parts of
-        the angular application */
+        the angular application. */
 
         var albumPicasso = {
             title: 'The Colors',
