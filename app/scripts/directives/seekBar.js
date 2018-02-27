@@ -60,16 +60,15 @@
 
               scope.trackThumb = function() {
                   $document.bind('mousemove.thumb', function(event) {
-                      var percent = calculatePercent(seekBar, event);
-                      scope.$apply(function() {
-                          scope.value = percent * scope.max;
-                          notifyOnChange(scope.value);
-                      });
+                    var percent = calculatePercent(seekBar, event);
+                    scope.$apply(function() {
+                      scope.value = percent * scope.max;
+                      notifyOnChange(scope.value);
+                    });
                   });
-
                   $document.bind('mouseup.thumb', function() {
-                        $document.unbind('mousemove.thumb');
-                        $document.unbind('mouseup.thumb');
+                  $document.unbind('mousemove.thumb');
+                  $document.unbind('mouseup.thumb');
                     });
                 };
 
